@@ -56,6 +56,15 @@ class TestCalculadora(unittest.TestCase):
         self.assertTrue(math.isnan(calculadora(2, 3, '$')))
         self.assertTrue(math.isnan(calculadora(2, 5, '#')))
         self.assertTrue(math.isnan(calculadora(0, 2, 'qwe')))
+        self.assertTrue(math.isnan(calculadora_v2(2, 3, '$')))
+        self.assertTrue(math.isnan(calculadora_v2(2, 5, '#')))
+        self.assertTrue(math.isnan(calculadora_v2(0, 2, 'qwe')))
+        self.assertTrue(math.isnan(calculadora_v3(2, 3, '$')))
+        self.assertTrue(math.isnan(calculadora_v3(2, 5, '#')))
+        self.assertTrue(math.isnan(calculadora_v3(0, 2, 'qwe')))
+        self.assertTrue(math.isnan(calculadora_v4(2, 3, '$')))
+        self.assertTrue(math.isnan(calculadora_v4(2, 5, '#')))
+        self.assertTrue(math.isnan(calculadora_v4(0, 2, 'qwe')))
 
         # Teste números de virgula flutuante - fazer três testes para todas as versões
         self.assertAlmostEqual(calculadora(2.5, 1.5, '+'), 4.0)
