@@ -112,6 +112,9 @@ class TestCalculadora(unittest.TestCase):
 
         # Teste números negativos com exponenciação de zero, testar para todas as versões
         self.assertEqual(calculadora(0, 3, '^'), 0)
+        self.assertEqual(calculadora_v2(0, 3, '^'), 0)
+        self.assertEqual(calculadora_v3(0, 3, '^'), 0)
+        self.assertEqual(calculadora_v4(0, 3, '^'), 0)
 
 
 if __name__ == '__main__':
