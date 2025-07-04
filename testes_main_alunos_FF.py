@@ -70,6 +70,15 @@ class TestCalculadora(unittest.TestCase):
         self.assertAlmostEqual(calculadora(2.5, 1.5, '+'), 4.0)
         self.assertAlmostEqual(calculadora(4.5, 1.5, '-'), 3.0)
         self.assertAlmostEqual(calculadora(5.5, 1.5, '*'), 8.25)
+        self.assertAlmostEqual(calculadora_v2(2.5, 1.5, '+'), 4.0)
+        self.assertAlmostEqual(calculadora_v2(4.5, 1.5, '-'), 3.0)
+        self.assertAlmostEqual(calculadora_v2(5.5, 1.5, '*'), 8.25)
+        self.assertAlmostEqual(calculadora_v3(2.5, 1.5, '+'), 4.0)
+        self.assertAlmostEqual(calculadora_v3(4.5, 1.5, '-'), 3.0)
+        self.assertAlmostEqual(calculadora_v3(5.5, 1.5, '*'), 8.25)
+        self.assertAlmostEqual(calculadora_v4(2.5, 1.5, '+'), 4.0)
+        self.assertAlmostEqual(calculadora_v4(4.5, 1.5, '-'), 3.0)
+        self.assertAlmostEqual(calculadora_v4(5.5, 1.5, '*'), 8.25)
 
         # Teste números negativos - fazer 3 testes para todas as versões
         self.assertEqual(calculadora(-2, 3, '*'), -6)
